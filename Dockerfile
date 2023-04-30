@@ -1,7 +1,7 @@
 FROM node:lts-alpine AS dependencies
 WORKDIR /home/cors
 COPY ./package.json /home/cors
-RUN npm install --production
+RUN yarn install --production
 
 FROM alpine:3.15
 WORKDIR /home/cors
