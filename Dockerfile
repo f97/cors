@@ -1,6 +1,6 @@
 FROM node:lts-alpine AS dependencies
 WORKDIR /home/cors
-COPY ./src/package.json /home/cors
+COPY ./package.json /home/cors
 RUN npm install --production
 
 FROM alpine:3.15
